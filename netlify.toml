@@ -1,0 +1,7 @@
+[build]
+  base = "assess-align"
+  command = "npm run build"
+  publish = "assess-align/.next"
+
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
