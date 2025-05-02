@@ -1,1 +1,8 @@
-/* /index.html 200
+# Netlify redirects for Next.js
+# These are fallbacks in case the Next.js Runtime doesn't handle routing
+
+# Redirect all page requests to the index.html file
+/*    /index.html   200
+
+# Handle 404 errors
+/*    /404.html     404

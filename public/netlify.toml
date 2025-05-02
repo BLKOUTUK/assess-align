@@ -1,0 +1,7 @@
+# This is a fallback netlify.toml in the public directory
+# It will be used if the main netlify.toml is not processed correctly
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
