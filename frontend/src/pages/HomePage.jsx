@@ -108,8 +108,83 @@ const HomePage = () => {
           </Card>
         </div>
 
+        {/* Research Foundation Section */}
+        <div className="mt-20 bg-gradient-to-br from-teal-50 to-emerald-50 rounded-2xl p-8 sm:p-12 border-2 border-teal-100">
+          <div className="flex items-start space-x-4 mb-6">
+            <div className="w-12 h-12 rounded-xl bg-teal-600 flex items-center justify-center flex-shrink-0">
+              <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+              </svg>
+            </div>
+            <div>
+              <h3 className="text-2xl sm:text-3xl font-bold text-slate-900 mb-3" data-testid="research-foundation-title">
+                Grounded in Research
+              </h3>
+              <p className="text-sm text-teal-700 font-medium">
+                Inspired by: "Valuing Black-led community organisations in Black mental health research"
+              </p>
+            </div>
+          </div>
+          
+          <div className="space-y-6 text-slate-700">
+            <p className="text-base leading-relaxed">
+              This tool is inspired by research from the University of Leeds examining the vital role of Black-led 
+              community organisations in mental health research. The study identifies key challenges and proposes 
+              transformative changes to research practices.
+            </p>
+            
+            <div className="bg-white/70 rounded-xl p-6 border border-teal-200">
+              <h4 className="font-semibold text-slate-900 mb-4 text-lg">Three Key Recommendations:</h4>
+              <div className="space-y-4">
+                <div className="flex items-start space-x-3">
+                  <div className="w-8 h-8 rounded-full bg-teal-100 flex items-center justify-center flex-shrink-0 mt-0.5">
+                    <span className="text-teal-700 font-bold text-sm">1</span>
+                  </div>
+                  <p className="text-sm leading-relaxed">
+                    <strong className="text-slate-900">Reconsider how Black-led organisations' work is valued and measured</strong> - 
+                    Move beyond traditional metrics to recognize the deep expertise and community trust these organizations bring.
+                  </p>
+                </div>
+                <div className="flex items-start space-x-3">
+                  <div className="w-8 h-8 rounded-full bg-emerald-100 flex items-center justify-center flex-shrink-0 mt-0.5">
+                    <span className="text-emerald-700 font-bold text-sm">2</span>
+                  </div>
+                  <p className="text-sm leading-relaxed">
+                    <strong className="text-slate-900">Forge greater collaboration between organisations</strong> - 
+                    Build networks and partnerships that strengthen collective voice and shared learning.
+                  </p>
+                </div>
+                <div className="flex items-start space-x-3">
+                  <div className="w-8 h-8 rounded-full bg-blue-100 flex items-center justify-center flex-shrink-0 mt-0.5">
+                    <span className="text-blue-700 font-bold text-sm">3</span>
+                  </div>
+                  <p className="text-sm leading-relaxed">
+                    <strong className="text-slate-900">Bolder consideration of how research practice can benefit Black communities</strong> - 
+                    Shift from extractive to genuinely reciprocal research relationships.
+                  </p>
+                </div>
+              </div>
+            </div>
+            
+            <div className="pt-4">
+              <a 
+                href="https://eprints.whiterose.ac.uk/id/eprint/221673/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="inline-flex items-center text-teal-700 hover:text-teal-800 font-medium text-sm transition-colors"
+                data-testid="research-article-link"
+              >
+                <span className="underline">Read the full research article</span>
+                <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
         {/* Why This Matters Section */}
-        <div className="mt-20 bg-white/50 backdrop-blur-sm rounded-2xl p-8 sm:p-12 border-2 border-slate-100">
+        <div className="mt-12 bg-white/50 backdrop-blur-sm rounded-2xl p-8 sm:p-12 border-2 border-slate-100">
           <h3 className="text-2xl sm:text-3xl font-bold text-slate-900 mb-6" data-testid="why-matters-title">
             Why This Matters
           </h3>
